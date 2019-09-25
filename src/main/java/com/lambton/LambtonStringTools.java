@@ -30,6 +30,7 @@ public class LambtonStringTools {
     }
 
     /// question 3
+
     public String initials(String fullName) {
         fullName = fullName.toUpperCase();
         String names[] = fullName.split(" ");
