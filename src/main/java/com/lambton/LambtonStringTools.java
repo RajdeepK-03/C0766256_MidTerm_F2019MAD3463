@@ -28,7 +28,37 @@ public class LambtonStringTools {
         }
         return decimal;
     }
-}
+
+    /// question 3
+    public String initials(String fullName) {
+        fullName = fullName.toUpperCase();
+        String names[] = fullName.split(" ");
+        if (names.length == 2) {
+            return null;
+        } else {
+            String initials = " ";
+            for (int i = 0; i < names.length - 1; i++) {
+                initials += names[i].toUpperCase().charAt(0) + ". ";
+            }
+            initials += titleCase(names[names.length - 1]);
+            return initials;
+        }
+    }
+    private String titleCase(String name) {
+        name = name.toLowerCase();
+        String titleCasedName = "";
+        titleCasedName += Character.toString(name.charAt(0)).toUpperCase();
+        titleCasedName += name.substring(1);
+        return titleCasedName;
+    }
+    }
+
+
+
+
+
+
+
 
 
 
