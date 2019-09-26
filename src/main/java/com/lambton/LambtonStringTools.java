@@ -29,7 +29,7 @@ public class LambtonStringTools {
         return decimal;
     }
 
-    /// question 3
+    ///
 
     public String initials(String fullName) {
         fullName = fullName.toUpperCase();
